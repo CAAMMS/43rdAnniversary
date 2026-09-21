@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071a38">
+  <meta name="description" content="CAA 43rd Anniversary interactive event guide and venue map.">
+  <title>CAA 43rd Anniversary — Event Guide</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="CAA 43rd Anniversary home">
+      <img class="brand-logo" src="assets/caa-43rd-logo.png" alt="CAA 43rd Anniversary">
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span><b>Menu</b></button>
+    <nav id="main-nav" aria-label="Main navigation">
+      <a class="active" href="#top">Home</a>
+      <a href="#floor-plan">Floor Plan</a>
+      <a href="#booths">Booths</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#guidelines">Guidelines</a>
+      <a href="#faqs">FAQs</a>
+    </nav>
+    <div class="header-motto">Steadfast in Faith,<br><strong>Forward Toward Salvation.</strong></div>
+  </header>
+
+  <main>
+    <section class="map-section" id="floor-plan">
+      <div class="flight-line" aria-hidden="true"><span>CAA · 43</span><i></i><span>MNL</span></div>
+      <div class="hero-title">
+        <div><p class="eyebrow">Welcome aboard</p><h1>EVENT <em>MAP</em></h1></div>
+        <p>Explore the venue, find every destination, and enjoy the celebration.</p>
+      </div>
+
+      <div class="map-layout">
+        <aside class="area-list" aria-label="Venue areas">
+          <div class="panel-heading"><span>01</span><div><b>Choose an area</b><small>13 destinations</small></div></div>
+          <div class="area-buttons" id="area-buttons"></div>
+          <div class="map-key"><span><i class="key-dot"></i> Select a pin</span><span><i class="key-ring"></i> Selected area</span></div>
+        </aside>
+
+        <div class="map-column">
+          <div class="map-toolbar">
+            <div><span class="status-dot"></span><b>Venue map</b><small>Tap any numbered marker</small></div>
+            <button id="reset-view" type="button" aria-label="Reset selected area">Reset view</button>
+          </div>
+          <div class="map-stage" id="map-stage">
+            <img src="assets/venue-map-approved-reference.jpg" alt="Approved-reference floor plan of the CAA 43rd Anniversary event venue">
+            <div class="map-shade" aria-hidden="true"></div>
+            <div id="hotspots"></div>
+            <div class="map-compass" aria-hidden="true"><b>N</b><i></i></div>
+            <div class="map-coordinate">14°35′N · 120°59′E</div>
+          </div>
+        </div>
+
+        <aside class="detail-panel" id="detail-panel" aria-live="polite">
+          <button class="panel-close" id="panel-close" aria-label="Close area details">×</button>
+          <div class="detail-number" id="detail-number">01</div>
+          <p class="eyebrow" id="detail-type">Arrival point</p>
+          <h2 id="detail-title">Entrance</h2>
+          <p id="detail-copy">Begin your anniversary journey here. Follow the runway aisle toward registration and the main event hall.</p>
+          <dl><div><dt>Zone</dt><dd id="detail-zone">Ground level</dd></div><div><dt>Best for</dt><dd id="detail-meta">First arrival</dd></div></dl>
+          <button class="locate-button" id="locate-button"><span>⌖</span> Show on map</button>
+          <div class="detail-stripe" aria-hidden="true"></div>
+        </aside>
+      </div>
+      <div class="scroll-cue"><span></span> Continue your journey</div>
+    </section>
+
+    <section class="section booths-section" id="booths">
+      <div class="section-heading"><div><p class="eyebrow">Passport destinations</p><h2>Four cultures.<br><em>One celebration.</em></h2></div><p>Visit each cultural booth, take part in the activities, and collect every passport stamp.</p></div>
+      <div class="booth-grid">
+        <article class="booth-card japan">
+          <div class="booth-photo"><img src="assets/booth-japan.jpg" alt="Japan cultural booth shown in the approved event floor plan"><span class="card-index">01</span></div>
+          <div class="booth-body"><p>Destination</p><h3>Japan</h3><strong>Purok 1 &amp; 6</strong><div class="history-milestone"><time datetime="1977">1977</time><p>The Church reached Japan during its expansion across Asia, establishing a lasting presence in the country.</p></div><div class="booth-actions"><a href="https://iglesianicristo.net/about-us/history/" target="_blank" rel="noopener">Official history</a><button data-area="japan">Locate booth <span>↗</span></button></div></div>
+        </article>
+        <article class="booth-card hawaii">
+          <div class="booth-photo"><img src="assets/booth-hawaii.jpg" alt="Hawaii cultural booth shown in the approved event floor plan"><span class="card-index">02</span></div>
+          <div class="booth-body"><p>Destination</p><h3>Hawaii</h3><strong>Purok 2 &amp; 9</strong><div class="history-milestone"><time datetime="1968-07-27">1968</time><p>On July 27, the first Iglesia Ni Cristo worship service outside the Philippines was held in Ewa Beach.</p></div><div class="booth-actions"><a href="https://incmedia.org/50-years-in-the-west/" target="_blank" rel="noopener">Official history</a><button data-area="hawaii">Locate booth <span>↗</span></button></div></div>
+        </article>
+        <article class="booth-card china">
+          <div class="booth-photo"><img src="assets/booth-china.jpg" alt="China cultural booth shown in the approved event floor plan"><span class="card-index">03</span></div>
+          <div class="booth-body"><p>Destination</p><h3>China</h3><strong>Purok 3, 4 &amp; 5</strong><div class="history-milestone"><time datetime="1974">1974</time><p>The Church reached China through Hong Kong; Kowloon’s roots include a committee prayer held on January 1.</p></div><div class="booth-actions"><a href="https://iglesianicristo.net/kowloon-congregation-celebrates-golden-anniversary/" target="_blank" rel="noopener">Official history</a><button data-area="china">Locate booth <span>↗</span></button></div></div>
+        </article>
+        <article class="booth-card south-africa">
+          <div class="booth-photo"><img src="assets/booth-south-africa.jpg" alt="South Africa cultural booth shown in the approved event floor plan"><span class="card-index">04</span></div>
+          <div class="booth-body"><p>Destination</p><h3>South Africa</h3><strong>Purok 7 &amp; 8</strong><div class="history-milestone"><time datetime="1977">1977</time><p>An early group worship service laid the foundation for the Church’s continuing growth across Africa.</p></div><div class="booth-actions"><a href="https://incmedia.org/the-rapid-growth-of-iglesia-ni-cristo-in-africa/" target="_blank" rel="noopener">Official history</a><button data-area="south-africa">Locate booth <span>↗</span></button></div></div>
+        </article>
+      </div>
+      <p class="history-source-note">Historical milestones are drawn from official Iglesia Ni Cristo and INC Media records.</p>
+    </section>
+
+    <section class="section schedule-section" id="schedule">
+      <div class="section-heading inverse"><div><p class="eyebrow">Flight itinerary</p><h2>Event <em>Schedule</em></h2></div><p>A clear journey from arrival to egress. Check final event-day advisories for exact call times.</p></div>
+      <div class="timeline">
+        <article><time>01</time><div><span>Pre-event</span><h3>Venue preparation</h3><p>Committee setup, booth readiness, technical checks, and final venue inspection.</p></div></article>
+        <article><time>02</time><div><span>Arrival</span><h3>Registration opens</h3><p>Complete your boarding pass, submit your raffle stub, and claim your event passport.</p></div></article>
+        <article><time>03</time><div><span>Main program</span><h3>Event proper</h3><p>Anniversary program, booth visits, cultural activities, and community celebration.</p></div></article>
+        <article><time>04</time><div><span>Departure</span><h3>Egress &amp; clean-up</h3><p>Orderly exit, booth breakdown, area clearing, and committee turnover.</p></div></article>
+      </div>
+    </section>
+
+    <section class="section guide-section" id="guidelines">
+      <div class="section-heading"><div><p class="eyebrow">Before you board</p><h2>Event <em>Guidelines</em></h2></div><p>Help keep the celebration safe, smooth, and welcoming for everyone.</p></div>
+      <div class="guide-grid">
+        <article><span>01</span><h3>Register first</h3><p>Proceed to Registration upon arrival and keep your event passport with you.</p></article>
+        <article><span>02</span><h3>Follow the route</h3><p>Use the central aisle and marked pathways. Keep entrances, exits, and service areas clear.</p></article>
+        <article><span>03</span><h3>Visit every booth</h3><p>Respect booth queues, follow activity instructions, and collect stamps responsibly.</p></article>
+        <article><span>04</span><h3>Care for the venue</h3><p>Dispose of waste properly and follow committee instructions during egress.</p></article>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faqs">
+      <div class="section-heading"><div><p class="eyebrow">Traveler assistance</p><h2>Frequently asked <em>questions</em></h2></div></div>
+      <div class="faq-list">
+        <details open><summary>Where should I go first?<span>+</span></summary><p>Enter through the main Entrance, then proceed directly to Registration to receive your passport and instructions.</p></details>
+        <details><summary>How do I find a cultural booth?<span>+</span></summary><p>Select the booth from the map list or tap its numbered hotspot. The map will highlight the location and show its assignment.</p></details>
+        <details><summary>Where can I ask for help?<span>+</span></summary><p>Visit Registration for general assistance or the Technical Committee desk for program and equipment concerns.</p></details>
+        <details><summary>Is the map mobile-friendly?<span>+</span></summary><p>Yes. On mobile, the map stays touch-friendly and area information opens as a bottom sheet for quick reference.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#top"><img class="brand-logo" src="assets/caa-43rd-logo.png" alt="CAA 43rd Anniversary"><span class="footer-motto">Steadfast in Faith,<br>Forward Toward Salvation.</span></a>
+    <div class="footer-route" aria-hidden="true"><i></i><span>✈</span><i></i></div>
+    <p>Anniversary Event Guide<br><small>Designed for a smooth event-day journey.</small></p>
+  </footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>
