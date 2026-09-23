@@ -12,4 +12,4 @@ Serve this folder with any static web server and open `index.html` through that 
 
 ## Supplied visual sources
 
-The header and footer use the approved `43rd.png` logo supplied by the event team. The interactive map uses a clean crop from the supplied location mockup, preserving its basketball-court layout, booth order, entrance, registration, stage, globe, photowall, technical committee, comfort room, souvenirs, and exit locations.
+The header and footer use the approved `43rd.png` logo supplied by the event team. The hero uses the supplied flight-and-world-map background. The interactive map uses the approved third floor-plan render. The country cards use individual crops from the supplied four-booth board.

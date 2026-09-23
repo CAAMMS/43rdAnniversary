@@ -1,133 +1,154 @@
-
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#071a38">
-  <meta name="description" content="CAA 43rd Anniversary interactive event guide and venue map.">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#061d3f">
+  <meta name="description" content="CAA 43rd Anniversary event-day guide, interactive venue map, schedule, cultural booths and passport progress.">
+  <meta property="og:title" content="CAA 43rd Anniversary Event Guide">
+  <meta property="og:description" content="Steadfast in Faith, Forward Toward Salvation.">
+  <meta property="og:image" content="assets/venue-map-v3.jpg">
   <title>CAA 43rd Anniversary — Event Guide</title>
-  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="icon" href="assets/caa-43rd-logo.png">
+  <link rel="apple-touch-icon" href="assets/caa-43rd-logo.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="assets/companion.css">
 </head>
 <body>
-  <header class="site-header" id="top">
-    <a class="brand" href="#top" aria-label="CAA 43rd Anniversary home">
-      <img class="brand-logo" src="assets/caa-43rd-logo.png" alt="CAA 43rd Anniversary">
+  <svg class="svg-sprite" aria-hidden="true">
+    <symbol id="icon-plane" viewBox="0 0 24 24"><path d="M22 2 9.6 14.4M22 2l-7.9 20-4.5-7.6L2 10l20-8Z"/></symbol>
+    <symbol id="icon-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="icon-register" viewBox="0 0 24 24"><circle cx="9" cy="8" r="4"/><path d="M3 21v-2a6 6 0 0 1 12 0v2M19 8v6M16 11h6"/></symbol>
+    <symbol id="icon-passport" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><circle cx="12" cy="11" r="3"/><path d="M9 11h6M12 8c1 1.8 1 4.2 0 6M8 17h8"/></symbol>
+    <symbol id="icon-map" viewBox="0 0 24 24"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6ZM9 3v15M15 6v15"/></symbol>
+    <symbol id="icon-stamp" viewBox="0 0 24 24"><path d="M8 13h8M9 13c0-2 1-3 1-5a2 2 0 1 1 4 0c0 2 1 3 1 5M6 13h12l2 4H4l2-4ZM5 21h14"/></symbol>
+    <symbol id="icon-gift" viewBox="0 0 24 24"><rect x="3" y="9" width="18" height="12" rx="1"/><path d="M12 9v12M3 13h18M12 9H7.5A2.5 2.5 0 1 1 10 6.5L12 9Zm0 0h4.5A2.5 2.5 0 1 0 14 6.5L12 9Z"/></symbol>
+    <symbol id="icon-store" viewBox="0 0 24 24"><path d="M4 10v10h16V10M3 10l2-6h14l2 6M3 10a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0M9 20v-6h6v6"/></symbol>
+    <symbol id="icon-utensils" viewBox="0 0 24 24"><path d="M7 3v8M4 3v5a3 3 0 0 0 6 0V3M7 11v10M16 3v18M16 3c3 1 4 4 4 7h-4"/></symbol>
+    <symbol id="icon-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.8 9a2.4 2.4 0 1 1 4 1.8c-1.2.8-1.8 1.3-1.8 2.7M12 17h.01"/></symbol>
+    <symbol id="icon-heart" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></symbol>
+    <symbol id="icon-trash" viewBox="0 0 24 24"><path d="M3 6h18M8 6V4h8v2M19 6l-1 15H6L5 6M10 10v7M14 10v7"/></symbol>
+    <symbol id="icon-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></symbol>
+    <symbol id="icon-expand" viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5"/></symbol>
+    <symbol id="icon-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></symbol>
+  </svg>
+  <a class="skip-link" href="#main">Skip to event guide</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="CAA 43rd Anniversary home">
+      <svg class="brand-plane icon" aria-hidden="true"><use href="#icon-plane"/></svg>
+      <span><strong>CAA</strong><small>43RD ANNIVERSARY</small></span>
     </a>
-    <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span><b>Menu</b></button>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span><span class="sr-only">Open menu</span></button>
     <nav id="main-nav" aria-label="Main navigation">
-      <a class="active" href="#top">Home</a>
-      <a href="#floor-plan">Floor Plan</a>
-      <a href="#booths">Booths</a>
-      <a href="#schedule">Schedule</a>
-      <a href="#guidelines">Guidelines</a>
-      <a href="#faqs">FAQs</a>
+      <a href="#home">Home</a><a href="#floor-plan">Map</a><a href="#booths">Booths</a><a href="#schedule">Activities</a><a href="#guidelines">Guidelines</a><a href="#faqs">FAQ</a>
     </nav>
-    <div class="header-motto">Steadfast in Faith,<br><strong>Forward Toward Salvation.</strong></div>
+    <a class="header-cta" href="#floor-plan">On Event Day <span>→</span></a>
   </header>
 
-  <main>
-    <section class="map-section" id="floor-plan">
-      <div class="flight-line" aria-hidden="true"><span>CAA · 43</span><i></i><span>MNL</span></div>
-      <div class="hero-title">
-        <div><p class="eyebrow">Welcome aboard</p><h1>EVENT <em>MAP</em></h1></div>
-        <p>Explore the venue, find every destination, and enjoy the celebration.</p>
-      </div>
-
-      <div class="map-layout">
-        <aside class="area-list" aria-label="Venue areas">
-          <div class="panel-heading"><span>01</span><div><b>Choose an area</b><small>13 destinations</small></div></div>
-          <div class="area-buttons" id="area-buttons"></div>
-          <div class="map-key"><span><i class="key-dot"></i> Select a pin</span><span><i class="key-ring"></i> Selected area</span></div>
-        </aside>
-
-        <div class="map-column">
-          <div class="map-toolbar">
-            <div><span class="status-dot"></span><b>Venue map</b><small>Tap any numbered marker</small></div>
-            <button id="reset-view" type="button" aria-label="Reset selected area">Reset view</button>
-          </div>
-          <div class="map-stage" id="map-stage">
-            <img src="assets/venue-map-approved-reference.png" alt="Updated third-render floor plan of the CAA 43rd Anniversary covered-court venue">
-            <div class="map-shade" aria-hidden="true"></div>
-            <div id="hotspots"></div>
-            <div class="map-compass" aria-hidden="true"><b>N</b><i></i></div>
-            <div class="map-coordinate">14°35′N · 120°59′E</div>
-          </div>
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <img src="assets/caa-43rd-logo.png" alt="CAA 43rd Anniversary" class="hero-logo">
+        <p class="eyebrow">One faith · One community · One celebration</p>
+        <h1>CAA 43rd<br>Anniversary</h1>
+        <p class="theme">Steadfast in Faith, Forward Toward Salvation.</p>
+        <div class="event-facts" aria-label="Event information">
+          <div><svg class="icon" aria-hidden="true"><use href="#icon-calendar"/></svg><p><strong>September 27, 2026</strong><small>Sunday</small></p></div>
+          <div><svg class="icon" aria-hidden="true"><use href="#icon-clock"/></svg><p><strong>2:00 PM–5:00 PM</strong><small>All activities run simultaneously</small></p></div>
+          <div><svg class="icon" aria-hidden="true"><use href="#icon-pin"/></svg><p><strong>Gatchalian Covered Court</strong><small>CAA, Las Piñas</small></p></div>
         </div>
+        <div class="hero-actions"><a class="button primary" href="#floor-plan">View Event Map <span>→</span></a><a class="button light" href="#schedule">View Activities <span>→</span></a></div>
+      </div>
+    </section>
 
-        <aside class="detail-panel" id="detail-panel" aria-live="polite">
-          <button class="panel-close" id="panel-close" aria-label="Close area details">×</button>
-          <div class="detail-number" id="detail-number">01</div>
-          <p class="eyebrow" id="detail-type">Arrival point</p>
-          <h2 id="detail-title">Entrance</h2>
-          <p id="detail-copy">Begin your anniversary journey here. Follow the runway aisle toward registration and the main event hall.</p>
-          <dl><div><dt>Zone</dt><dd id="detail-zone">Ground level</dd></div><div><dt>Best for</dt><dd id="detail-meta">First arrival</dd></div></dl>
-          <button class="locate-button" id="locate-button"><span>⌖</span> Show on map</button>
-          <div class="detail-stripe" aria-hidden="true"></div>
+    <section class="journey section-pad" aria-labelledby="journey-title">
+      <div class="section-heading"><p class="kicker">Event-day guide</p><h2 id="journey-title">Your Journey</h2><p>A simple route through your CAA 43rd Anniversary experience.</p></div>
+      <ol class="journey-steps">
+        <li><span>01</span><i><svg class="icon" aria-hidden="true"><use href="#icon-register"/></svg></i><strong>Register</strong><small>at the entrance</small></li>
+        <li><span>02</span><i><svg class="icon" aria-hidden="true"><use href="#icon-passport"/></svg></i><strong>Get Your Passport</strong><small>from Registration</small></li>
+        <li><span>03</span><i><svg class="icon" aria-hidden="true"><use href="#icon-map"/></svg></i><strong>Visit 4 Booths</strong><small>in any order</small></li>
+        <li><span>04</span><i><svg class="icon" aria-hidden="true"><use href="#icon-stamp"/></svg></i><strong>Complete All Stamps</strong><small>mark progress below</small></li>
+        <li><span>05</span><i><svg class="icon" aria-hidden="true"><use href="#icon-gift"/></svg></i><strong>Claim Your Souvenir</strong><small>at the souvenir station</small></li>
+      </ol>
+    </section>
+
+    <section class="quick section-pad" aria-labelledby="quick-title">
+      <div class="section-heading compact"><h2 id="quick-title">Quick Actions</h2><p>Everything you need, right here.</p></div>
+      <div class="quick-grid">
+        <a href="#floor-plan"><svg class="icon" aria-hidden="true"><use href="#icon-map"/></svg>Event Map</a><a href="#booths"><svg class="icon" aria-hidden="true"><use href="#icon-store"/></svg>Booths</a><a href="#schedule"><svg class="icon" aria-hidden="true"><use href="#icon-clock"/></svg>Activities</a><button data-location="food"><svg class="icon" aria-hidden="true"><use href="#icon-utensils"/></svg>Food Area</button><button data-location="souvenirs"><svg class="icon" aria-hidden="true"><use href="#icon-gift"/></svg>Souvenirs</button><a href="#faqs"><svg class="icon" aria-hidden="true"><use href="#icon-help"/></svg>FAQ</a>
+      </div>
+    </section>
+
+    <section class="map-section section-pad" id="floor-plan" aria-labelledby="map-title">
+      <div class="section-heading"><p class="kicker">Find your way</p><h2 id="map-title">Event Map</h2><p>Choose a destination to highlight it on the venue floor plan.</p></div>
+      <div class="map-toolbar" aria-label="Popular destinations">
+        <button data-location="registration">Registration</button><button data-location="japan">Japan</button><button data-location="hawaii">Hawaii</button><button data-location="china">China</button><button data-location="south-africa">South Africa</button><button data-location="souvenirs">Souvenirs</button><button data-location="food">Food</button><button data-location="photobooth">Photo</button>
+      </div>
+      <div class="map-layout">
+        <div class="map-card">
+          <div class="map-stage" id="map-stage">
+            <img src="assets/venue-map-v3.jpg" alt="Top-view render of Gatchalian Covered Court showing the stage, booths and event facilities" width="1672" height="941">
+            <div id="hotspots" class="hotspots"></div>
+          </div>
+          <button class="expand-map" type="button" id="expand-map"><svg class="icon" aria-hidden="true"><use href="#icon-expand"/></svg><span>Fullscreen map</span></button>
+        </div>
+        <aside class="location-panel" aria-live="polite">
+          <p class="panel-label">Selected destination</p><h3 id="location-name">Entrance</h3><p id="location-copy">Start here. Proceed inside, then continue to Registration to receive your event passport.</p>
+          <dl><div><dt>Route</dt><dd id="location-route">Front-left entrance</dd></div><div><dt>Tip</dt><dd id="location-tip">Keep your passport with you throughout the event.</dd></div></dl>
+          <button class="button primary locate-current" type="button">Show on map <svg class="icon" aria-hidden="true"><use href="#icon-target"/></svg></button>
+          <p class="assistance">Need help? Approach the Registration or Technical booth for event-day assistance.</p>
         </aside>
       </div>
-      <div class="scroll-cue"><span></span> Continue your journey</div>
     </section>
 
-    <section class="section booths-section" id="booths">
-      <div class="section-heading"><div><p class="eyebrow">Passport destinations</p><h2>Four cultures.<br><em>One celebration.</em></h2></div><p>Visit each cultural booth, take part in the activities, and collect every passport stamp.</p></div>
+    <section class="passport section-pad" id="passport" aria-labelledby="passport-title">
+      <div class="passport-head"><div><p class="kicker">Digital companion</p><h2 id="passport-title">Passport Progress</h2><p>Use this as your personal checklist. Your physical passport is still required for official stamps.</p></div><div class="progress-count"><strong id="progress-count">0 / 4</strong><span>Booths visited</span></div></div>
+      <div class="progress-track"><span id="progress-bar"></span></div>
+      <div class="passport-list">
+        <label><input type="checkbox" value="japan"><span>Japan<small>Purok 1 & 6</small></span></label>
+        <label><input type="checkbox" value="hawaii"><span>Hawaii<small>Purok 2 & 9</small></span></label>
+        <label><input type="checkbox" value="china"><span>China<small>Purok 3, 4 & 5</small></span></label>
+        <label><input type="checkbox" value="south-africa"><span>South Africa<small>Purok 7 & 8</small></span></label>
+      </div>
+      <div class="passport-complete" id="passport-complete" hidden><strong>Passport complete!</strong><span>Proceed to the Souvenir Station with your stamped physical passport.</span><button type="button" data-location="souvenirs">Locate Souvenirs →</button></div>
+    </section>
+
+    <section class="booths section-pad" id="booths" aria-labelledby="booths-title">
+      <div class="section-heading"><p class="kicker">Four destinations · One CAA</p><h2 id="booths-title">Cultural Booths</h2><p>Complete the activity and collect a stamp at every destination.</p></div>
       <div class="booth-grid">
-        <article class="booth-card japan">
-          <div class="booth-photo"><img src="assets/booth-japan.png" alt="Japan cultural booth shown in the approved event floor plan"><span class="card-index">01</span></div>
-          <div class="booth-body"><p>Destination</p><h3>Japan</h3><strong>Purok 1 &amp; 6</strong><div class="history-milestone"><time datetime="1977">1977</time><p>The Church reached Japan during its expansion across Asia, establishing a lasting presence in the country.</p></div><div class="booth-actions"><a href="https://iglesianicristo.net/about-us/history/" target="_blank" rel="noopener">Official history</a><button data-area="japan">Locate booth <span>↗</span></button></div></div>
-        </article>
-        <article class="booth-card hawaii">
-          <div class="booth-photo"><img src="assets/booth-hawaii.png" alt="Hawaii cultural booth shown in the approved event floor plan"><span class="card-index">02</span></div>
-          <div class="booth-body"><p>Destination</p><h3>Hawaii</h3><strong>Purok 2 &amp; 9</strong><div class="history-milestone"><time datetime="1968-07-27">1968</time><p>On July 27, the first Iglesia Ni Cristo worship service outside the Philippines was held in Ewa Beach.</p></div><div class="booth-actions"><a href="https://incmedia.org/50-years-in-the-west/" target="_blank" rel="noopener">Official history</a><button data-area="hawaii">Locate booth <span>↗</span></button></div></div>
-        </article>
-        <article class="booth-card china">
-          <div class="booth-photo"><img src="assets/booth-china.png" alt="China cultural booth shown in the approved event floor plan"><span class="card-index">03</span></div>
-          <div class="booth-body"><p>Destination</p><h3>China</h3><strong>Purok 3, 4 &amp; 5</strong><div class="history-milestone"><time datetime="1974">1974</time><p>The Church reached China through Hong Kong; Kowloon’s roots include a committee prayer held on January 1.</p></div><div class="booth-actions"><a href="https://iglesianicristo.net/kowloon-congregation-celebrates-golden-anniversary/" target="_blank" rel="noopener">Official history</a><button data-area="china">Locate booth <span>↗</span></button></div></div>
-        </article>
-        <article class="booth-card south-africa">
-          <div class="booth-photo"><img src="assets/booth-south-africa.png" alt="South Africa cultural booth shown in the approved event floor plan"><span class="card-index">04</span></div>
-          <div class="booth-body"><p>Destination</p><h3>South Africa</h3><strong>Purok 7 &amp; 8</strong><div class="history-milestone"><time datetime="1977">1977</time><p>An early group worship service laid the foundation for the Church’s continuing growth across Africa.</p></div><div class="booth-actions"><a href="https://incmedia.org/the-rapid-growth-of-iglesia-ni-cristo-in-africa/" target="_blank" rel="noopener">Official history</a><button data-area="south-africa">Locate booth <span>↗</span></button></div></div>
-        </article>
-      </div>
-      <p class="history-source-note">Historical milestones are drawn from official Iglesia Ni Cristo and INC Media records.</p>
-    </section>
-
-    <section class="section schedule-section" id="schedule">
-      <div class="section-heading inverse"><div><p class="eyebrow">Flight itinerary</p><h2>Event <em>Schedule</em></h2></div><p>A clear journey from arrival to egress. Check final event-day advisories for exact call times.</p></div>
-      <div class="timeline">
-        <article><time>01</time><div><span>Pre-event</span><h3>Venue preparation</h3><p>Committee setup, booth readiness, technical checks, and final venue inspection.</p></div></article>
-        <article><time>02</time><div><span>Arrival</span><h3>Registration opens</h3><p>Complete your boarding pass, submit your raffle stub, and claim your event passport.</p></div></article>
-        <article><time>03</time><div><span>Main program</span><h3>Event proper</h3><p>Anniversary program, booth visits, cultural activities, and community celebration.</p></div></article>
-        <article><time>04</time><div><span>Departure</span><h3>Egress &amp; clean-up</h3><p>Orderly exit, booth breakdown, area clearing, and committee turnover.</p></div></article>
+        <article class="booth-card japan"><img src="assets/booth-japan.jpg" alt="Japan cultural booth backdrop"><div><p class="booth-number">01 · Destination</p><h3>Japan</h3><p class="assignment">Purok 1 & 6</p><ul><li>Experience the booth activity</li><li>Allow about 5–10 minutes</li><li>Get your Japan stamp</li></ul><p class="history"><strong>INC history:</strong> The first local congregation in Japan was established in 1977, marking an early chapter of the Church’s overseas growth.</p><div class="card-actions"><button data-location="japan">Locate Booth</button><button class="stamp" data-stamp="japan">Mark Visited</button></div></div></article>
+        <article class="booth-card hawaii"><img src="assets/booth-hawaii.jpg" alt="Hawaii cultural booth backdrop"><div><p class="booth-number">02 · Destination</p><h3>Hawaii</h3><p class="assignment">Purok 2 & 9</p><ul><li>Experience the booth activity</li><li>Allow about 5–10 minutes</li><li>Get your Hawaii stamp</li></ul><p class="history"><strong>INC history:</strong> The Church’s first overseas congregation was established in Honolulu, Hawaii in 1968.</p><div class="card-actions"><button data-location="hawaii">Locate Booth</button><button class="stamp" data-stamp="hawaii">Mark Visited</button></div></div></article>
+        <article class="booth-card china"><img src="assets/booth-china.jpg" alt="China cultural booth backdrop"><div><p class="booth-number">03 · Destination</p><h3>China</h3><p class="assignment">Purok 3, 4 & 5</p><ul><li>Experience the booth activity</li><li>Allow about 5–10 minutes</li><li>Get your China stamp</li></ul><p class="history"><strong>INC history:</strong> The Church reached Chinese-speaking communities as its international mission continued to expand across Asia.</p><div class="card-actions"><button data-location="china">Locate Booth</button><button class="stamp" data-stamp="china">Mark Visited</button></div></div></article>
+        <article class="booth-card africa"><img src="assets/booth-south-africa.jpg" alt="South Africa cultural booth backdrop"><div><p class="booth-number">04 · Destination</p><h3>South Africa</h3><p class="assignment">Purok 7 & 8</p><ul><li>Experience the booth activity</li><li>Allow about 5–10 minutes</li><li>Get your South Africa stamp</li></ul><p class="history"><strong>INC history:</strong> The Church’s growth in Africa reflects a worldwide mission that now connects congregations across continents.</p><div class="card-actions"><button data-location="south-africa">Locate Booth</button><button class="stamp" data-stamp="south-africa">Mark Visited</button></div></div></article>
       </div>
     </section>
 
-    <section class="section guide-section" id="guidelines">
-      <div class="section-heading"><div><p class="eyebrow">Before you board</p><h2>Event <em>Guidelines</em></h2></div><p>Help keep the celebration safe, smooth, and welcoming for everyone.</p></div>
-      <div class="guide-grid">
-        <article><span>01</span><h3>Register first</h3><p>Proceed to Registration upon arrival and keep your event passport with you.</p></article>
-        <article><span>02</span><h3>Follow the route</h3><p>Use the central aisle and marked pathways. Keep entrances, exits, and service areas clear.</p></article>
-        <article><span>03</span><h3>Visit every booth</h3><p>Respect booth queues, follow activity instructions, and collect stamps responsibly.</p></article>
-        <article><span>04</span><h3>Care for the venue</h3><p>Dispose of waste properly and follow committee instructions during egress.</p></article>
-      </div>
+    <section class="schedule-guidelines section-pad">
+      <article id="schedule"><div class="section-heading compact"><p class="kicker">Sunday · 2:00 PM–5:00 PM</p><h2>Simultaneous Activities</h2><p>All event areas operate throughout the same three-hour window. Visit them in any order.</p></div><ul class="simultaneous-list"><li><svg class="icon"><use href="#icon-passport"/></svg><span><strong>Registration & Passport Issuance</strong><small>Available throughout the event</small></span></li><li><svg class="icon"><use href="#icon-store"/></svg><span><strong>Cultural Booth Activities</strong><small>Japan, Hawaii, China and South Africa</small></span></li><li><svg class="icon"><use href="#icon-utensils"/></svg><span><strong>Food and Fellowship</strong><small>Food area open during event hours</small></span></li><li><svg class="icon"><use href="#icon-gift"/></svg><span><strong>Souvenir & Prize Claiming</strong><small>After completing all four physical stamps</small></span></li></ul></article>
+      <article id="guidelines"><div class="section-heading compact"><p class="kicker">Travel reminders</p><h2>Guidelines</h2><p>Help us make the event enjoyable for everyone.</p></div><ul class="guideline-list"><li><svg class="icon"><use href="#icon-register"/></svg>Wear comfortable, appropriate attire.</li><li><svg class="icon"><use href="#icon-map"/></svg>Follow booth and event-staff instructions.</li><li><svg class="icon"><use href="#icon-heart"/></svg>Be respectful of everyone and keep walkways clear.</li><li><svg class="icon"><use href="#icon-trash"/></svg>Keep the venue clean and dispose of waste properly.</li><li><svg class="icon"><use href="#icon-info"/></svg>Ask Registration or Technical staff for assistance.</li></ul></article>
     </section>
 
-    <section class="section faq-section" id="faqs">
-      <div class="section-heading"><div><p class="eyebrow">Traveler assistance</p><h2>Frequently asked <em>questions</em></h2></div></div>
-      <div class="faq-list">
-        <details open><summary>Where should I go first?<span>+</span></summary><p>Enter through the main Entrance, then proceed directly to Registration to receive your passport and instructions.</p></details>
-        <details><summary>How do I find a cultural booth?<span>+</span></summary><p>Select the booth from the map list or tap its numbered hotspot. The map will highlight the location and show its assignment.</p></details>
-        <details><summary>Where can I ask for help?<span>+</span></summary><p>Visit Registration for general assistance or the Technical Committee desk for program and equipment concerns.</p></details>
-        <details><summary>Is the map mobile-friendly?<span>+</span></summary><p>Yes. On mobile, the map stays touch-friendly and area information opens as a bottom sheet for quick reference.</p></details>
+    <section class="faq section-pad" id="faqs" aria-labelledby="faq-title">
+      <div class="section-heading"><p class="kicker">Need help?</p><h2 id="faq-title">Frequently Asked Questions</h2><p>Quick answers for a smoother experience.</p></div>
+      <div class="faq-grid">
+        <details><summary>Where do I start?</summary><p>Enter through the marked Entrance, then proceed to Registration to receive your physical passport.</p></details>
+        <details><summary>How do I complete my passport?</summary><p>Visit all four cultural booths, complete each activity and collect the official physical stamp before leaving.</p></details>
+        <details><summary>Can I visit booths in any order?</summary><p>Yes. Choose whichever booth is less busy, and use the digital checklist to track your progress.</p></details>
+        <details><summary>Where do I claim my souvenir?</summary><p>After completing all four stamps, bring your physical passport to the Souvenir Station at the front-center of the venue.</p></details>
+        <details><summary>Where are food and restrooms?</summary><p>The Food Booth is on the right side of the court. Ask event staff for the nearest available restroom.</p></details>
+        <details><summary>What if I lose my passport?</summary><p>Return to Registration immediately. Staff will guide you on the event’s replacement procedure.</p></details>
+        <details><summary>Where can seniors or PWDs ask for help?</summary><p>Approach Registration or any identified event staff member for priority assistance and accessible routing.</p></details>
+        <details><summary>Where are first aid and lost-and-found?</summary><p>Please report to Registration or the Technical booth so staff can connect you with the assigned response team.</p></details>
       </div>
     </section>
   </main>
 
-  <footer>
-    <a class="brand footer-brand" href="#top"><img class="brand-logo" src="assets/caa-43rd-logo.png" alt="CAA 43rd Anniversary"><span class="footer-motto">Steadfast in Faith,<br>Forward Toward Salvation.</span></a>
-    <div class="footer-route" aria-hidden="true"><i></i><span>✈</span><i></i></div>
-    <p>Anniversary Event Guide<br><small>Designed for a smooth event-day journey.</small></p>
-  </footer>
-  <script src="assets/app.js"></script>
+  <footer><div class="footer-brand"><svg class="icon" aria-hidden="true"><use href="#icon-plane"/></svg><p><strong>CAA 43RD ANNIVERSARY</strong><small>Steadfast in Faith, Forward Toward Salvation.</small></p></div><nav aria-label="Footer navigation"><a href="#home">Home</a><a href="#floor-plan">Map</a><a href="#booths">Booths</a><a href="#schedule">Activities</a><a href="#guidelines">Guidelines</a><a href="#faqs">FAQ</a></nav><svg class="icon" aria-hidden="true"><use href="#icon-plane"/></svg></footer>
+
+  <dialog id="map-dialog" class="map-dialog"><div class="dialog-bar"><strong>Interactive Venue Map</strong><div><button type="button" data-zoom="out" aria-label="Zoom out">−</button><button type="button" data-zoom="reset" aria-label="Reset zoom">1:1</button><button type="button" data-zoom="in" aria-label="Zoom in">+</button><button type="button" id="close-map" aria-label="Close fullscreen map">×</button></div></div><div class="dialog-viewport"><div class="dialog-canvas" id="dialog-canvas"><img src="assets/venue-map-v3.jpg" alt="Fullscreen top-view venue map"><div id="dialog-hotspots" class="hotspots"></div></div></div></dialog>
+  <div class="offline-toast" id="offline-toast" role="status" aria-live="polite"></div>
+  <script src="assets/companion.js" defer></script>
 </body>
 </html>
