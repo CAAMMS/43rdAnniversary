@@ -1,4 +1,4 @@
-const CACHE='caa43-event-guide-v4';
+const CACHE='caa43-event-guide-v5';
 const ASSETS=['./','./index.html','./manifest.json','./assets/companion.css','./assets/companion.js','./assets/caa-43rd-logo.png','./assets/hero-flight-background.png','./assets/venue-map-v3.jpg','./assets/booth-japan.jpg','./assets/booth-hawaii.jpg','./assets/booth-china.jpg','./assets/booth-south-africa.jpg'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));
